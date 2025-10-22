@@ -24,7 +24,7 @@ export default function PhishingDetector() {
     setResult(null);
 
     try {
-      const response = await fetch('https://phishing-detector-backend-ahb5.onrender.com/check', {
+      const response = await fetch('https://phishing-detector-backendd.onrender.com/check', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: url.trim() })
